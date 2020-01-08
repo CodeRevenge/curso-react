@@ -6,7 +6,8 @@ import { CLOUD,
         DAY_SUNY,
         RAIN,
         SNOW,
-        WINDY } from '../constants/weathers'
+        WINDY } from '../../../constants/weathers'
+import './styles.css';
 
 const SIZE = '2x';
 
@@ -34,7 +35,7 @@ const getWeatherIcon = weatherState => {
 };
 
 const WeatherTemperature = ({ temperature, weatherState}) => (
-    <div>
+    <div className='weatherTemperatureCount'>
         {getWeatherIcon(weatherState)}
         <span>
             {`${temperature} C°`}
