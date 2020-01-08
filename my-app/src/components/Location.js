@@ -2,7 +2,6 @@ import React from 'react';
 
 const Location = ({ city }) => (
     // const { city } = props; // Destructuring
-
     <div>
         <h1>
             {city}
