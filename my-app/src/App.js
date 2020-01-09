@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import WeatherLocation from './components/WeatherLocation'
+//import WeatherLocation from './components/WeatherLocation'
 import LocationList from './components/LocationList'
 import './App.css';
 

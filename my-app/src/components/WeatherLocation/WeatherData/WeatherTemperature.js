@@ -3,10 +3,12 @@ import WeatherIcons from 'react-weathericons';
 import PropTypes from 'prop-types';
 import { CLOUD,
         CLOUDY,
-        WI_DAY_SUNNY,
+        SUN,
         RAIN,
         SNOW,
-        WINDY } from '../../../constants/weathers'
+        WINDY,
+        THUNDER,
+        DRIZZLE } from '../../../constants/weathers'
 import './styles.css';
 
 const stateToIconName = weatherState => {
@@ -15,17 +17,20 @@ const stateToIconName = weatherState => {
             return 'cloud';
         case CLOUDY:
             return 'cloudy';
-        case WI_DAY_SUNNY:
-            debugger;
-            return 'wi-day-sunny';
+        case SUN:
+            return 'day-sunny';
         case RAIN:
             return 'rain';
         case SNOW:
             return 'snow';
         case WINDY:
             return 'windy';
+        case THUNDER:
+            return 'day-thunderstorm';
+        case DRIZZLE:
+            return 'day-showers';
         default:
-            return WI_DAY_SUNNY;
+            return 'day-sunny';
     }
 }
 
