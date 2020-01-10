@@ -19,7 +19,7 @@ class App extends Component{
   handleSelectedLocation = city => {
     console.log(`handleSelectionLocation ${city}`)
   }
-  
+
   render() {
     return (
 
