@@ -24,11 +24,13 @@ class App extends Component{
   }
   
   handleSelectedLocation = city => {
+    this.setState({ city });
     console.log(`handleSelectionLocation ${city}`)
   }
 
   render() {
     const { city } = this.state;
+    
     return (
 
       <MuiThemeProvider>
@@ -45,7 +47,7 @@ class App extends Component{
             </Col>
             <Col md={12} lg={6}>
               <Paper zDepth={4}>
-                <div className='detail'>
+                <div className='detail'>              
                   <ForecastExtended city={city}></ForecastExtended>
                 </div>
               </Paper>

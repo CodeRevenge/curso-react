@@ -3,17 +3,13 @@ import PropTypes from 'prop-types'
 
 class ForecastExtended extends Component {
 
-    constructor({ city }) {
-        super();
-        this.state = {
-            city,
-        };
-    }
+
 
     render() {
+        const { city } = this.props;
         return (
             <div>
-                Pronostico extendido para {this.state.city}
+                Pronostico extendido para {city}
             </div>
         );
     }
