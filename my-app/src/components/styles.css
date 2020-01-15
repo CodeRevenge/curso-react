@@ -1,7 +1,3 @@
-.locationList {
-    background: red;
-}
-
 @media (max-width: 61.93em) {
     .locationList {
         max-height: 30vh;
