@@ -3,6 +3,7 @@
     margin-right: 10px;
     width: calc(100% - 20px);
     min-width: 430px;
+    font-size-adjust: initial;
     padding: 25px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;

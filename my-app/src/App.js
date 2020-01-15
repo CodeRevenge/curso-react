@@ -31,14 +31,15 @@ class App extends Component{
             </Col>
           </Row>
           <Row>
-            <Col xs={12} md={6}>
+            <Col md={12} lg={6}>
               <LocationList cities={cities}
                 onSelectedLocation={this.handleSelectedLocation} ></LocationList>
             </Col>
-            <Col xs={12} md={6}>
+            <Col md={12} lg={6}>
               <Paper zDepth={4}>
-                <div className='detail'></div>
-                
+                <div className='detail'>
+
+                </div>
               </Paper>
             </Col>
           </Row>
